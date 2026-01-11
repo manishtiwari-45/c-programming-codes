@@ -1,24 +1,26 @@
-#include<stdio.h>
+#include <stdio.h>
 
 #define MAXLINE 1000
 
-int getline(char line[], int maxline);
-int remove_trailing(chra line[], int len);
+int get_line(char line[], int maxline);
+int remove_trailing(char line[], int len);
 
 int main()
 {
     int len;
     char line[MAXLINE];
-    while ((len = getline(line,MAXLINE)) > 0){
+
+    while ((len = get_line(line, MAXLINE)) > 0) {
         len = remove_trailing(line, len);
-        if(len > 0){
-            printf("%s",line);
+        if (len > 0) {
+            printf("%s", line);
         }
     }
     return 0;
 }
 
-int get_line(char s[], int lim) {
+int get_line(char s[], int lim)
+{
     int c, i;
 
     for (i = 0;
@@ -35,14 +37,13 @@ int get_line(char s[], int lim) {
     return i;
 }
 
-int remove_trailing(char s[], int len) {
+int remove_trailing(char s[], int len)
+{
     int i = len - 1;
 
-    // remove newline temporarily
     if (i >= 0 && s[i] == '\n')
         --i;
 
-    // remove spaces and tabs from end
     while (i >= 0 && (s[i] == ' ' || s[i] == '\t'))
         --i;
 
@@ -52,7 +53,6 @@ int remove_trailing(char s[], int len) {
         return i + 2;
     }
 
-    // line was entirely blank
     s[0] = '\0';
     return 0;
 }

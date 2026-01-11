@@ -1,19 +1,23 @@
-#include<stdio.h>
-#define MAXLINE 1000
-int getline(char line[], int maxline);
+#include <stdio.h>
 
+#define MAXLINE 1000
+
+int get_line(char line[], int maxline);
 void reverse(char s[]);
 
 int main()
 {
     char line[MAXLINE];
-    while(getline(line,MAXLINE) > 0){
+
+    while (get_line(line, MAXLINE) > 0) {
         reverse(line);
+        printf("%s", line);
     }
     return 0;
 }
 
-int get_line(char s[], int lim) {
+int get_line(char s[], int lim)
+{
     int c, i;
 
     for (i = 0;
@@ -29,19 +33,21 @@ int get_line(char s[], int lim) {
     s[i] = '\0';
     return i;
 }
-void reerse(char s[]){
-    int i,j;
+
+void reverse(char s[])
+{
+    int i, j;
     char temp;
 
-    for(j = 0;s[j] != '\0'; ++j){
+    for (j = 0; s[j] != '\0'; ++j)
         ;
-    }
-    if(j>0 && s[j-1] == '\n'){
+
+    if (j > 0 && s[j - 1] == '\n')
         --j;
-    }
-    for(i = 0;i<j/2; ++i){
+
+    for (i = 0; i < j / 2; ++i) {
         temp = s[i];
-        s[i] = s[j-1-i];
-        s[j-1-i] = temp;
+        s[i] = s[j - 1 - i];
+        s[j - 1 - i] = temp;
     }
 }
