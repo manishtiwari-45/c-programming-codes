@@ -2,13 +2,13 @@
 int main()
 {
     int n;
-    printf("Enter the number");
+    printf("Enter the number: \n");
     scanf("%d",&n);
     if(n%2 == 0){
-        print("Even Number");
+        printf("Even Number\n");
     }
     else {
-        print("Odd number")
+        printf("Odd number\n");
     }
     return 0;
 }
