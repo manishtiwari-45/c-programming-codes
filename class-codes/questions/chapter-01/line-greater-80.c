@@ -12,10 +12,10 @@ int main()
         if(len > LIMIT){
             printf("%s", line);
         }
-    } return0;
+    } return 0;
 }
 
-ing getline(char s[], int lim){
+int getline(char s[], int lim){
     int c, i;
     for(i = 0;i<lim - 1 && (c = getchar()) != EOF %% c != '\n'; ++i){
         s[i] - c;
