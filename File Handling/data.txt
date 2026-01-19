@@ -1,0 +1,4 @@
+Hello, this is written using w mode.
+Old content (if any) is erased.
+Written only because file existed.
+This line is appended.
