@@ -12,23 +12,25 @@ typedef struct pokemon // global declaration
     } pokemon;
 
 void change(pokemon* p){
-    (*p).hp = 100;
-    (*p).attack = 100;
-    (*p).speed = 100;
-    (*p).tier = 'B';
-    strcpy((*p).name,"NewName");
+    (*p).hp = 100;    // first way to do
+    p->attack = 50;   // second way 
+    p->speed = 200; // (*x).something == x->something
+    p->tier = 'B';
+    strcpy(p->name,"NewName");
     return;
 }
 
 
 int main()
 {
-    pokemon pikachu;
-    pikachu.hp = 60;
-    pikachu.attack = 70;
-    pikachu.speed = 90;
-    pikachu.tier = 'A';
-    strcpy(pikachu.name,"Pikachu");
+    // pokemon pikachu;
+    // pikachu.hp = 60;
+    // pikachu.attack = 70;
+    // pikachu.speed = 90;
+    // pikachu.tier = 'A';
+    // strcpy(pikachu.name,"Pikachu");
+
+    pokemon pikachu = {60,70,100,'A',"Pikachu"}; // better way to initialise structure 
 
     printf("Name: %s\n",pikachu.name);
     printf("HP: %d\n",pikachu.hp); 
