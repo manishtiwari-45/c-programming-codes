@@ -24,6 +24,6 @@ int main() {
 
     while((c = getchar()) != EOF)
         putchar(c);
-        // printf("Value of EOF: %d\n", EOF);
+        printf("Value of EOF: %d\n", EOF);
     return 0;
 }

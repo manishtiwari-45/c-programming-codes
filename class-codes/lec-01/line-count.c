@@ -8,6 +8,6 @@ int main()
             ++nl;
         }
     }
-    printf("%d\n",nl);
+    printf("Number of lines are: %d\n",nl);
     return 0;
 }
