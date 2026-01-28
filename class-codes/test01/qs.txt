@@ -1,0 +1,8 @@
+1. write a c program to display 8-bit binary representaion of a number using bitwise operator
+2. write a program to substract a number from another using 2's complement witout using - operator
+3. write a c program to check whether a givem 8-bit number is negative using bitwise operations  
+4. write a function invert x,p,n that returns x with n bits, that begin at position p inverted
+
+
+// maybe for arrays
+5. Given any positive integer number, write programs to print its decimal, octal, and hexadecimal equivalent number

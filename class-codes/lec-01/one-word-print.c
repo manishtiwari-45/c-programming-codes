@@ -14,8 +14,8 @@ int main()
             }
         }
         else{
-                putchar(c);
-                state = IN;
+            putchar(c);
+            state = IN;
         }
     }return 0;
 }
