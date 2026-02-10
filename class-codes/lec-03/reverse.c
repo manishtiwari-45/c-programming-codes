@@ -22,9 +22,11 @@ void reverse(char str[]){
     }
     j--;
     
-    for(i = 0; i < j; i++, j--){
+    while(i < j){
         char temp = str[i];
         str[i] = str[j];
         str[j] = temp;
+        i++;
+        j--;
     }
 }
