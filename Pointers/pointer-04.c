@@ -10,7 +10,6 @@ int main(){
         printf("value: %d\n", *(pa+i));
     }
     printf("\n");
-    // printf("Address: %p\n",pa+11111);
     printf("value: %d\n", *(pa+111110000));
 
 

@@ -11,4 +11,17 @@ int main(){
         
     }
     printf("%s\n", str);
+
+
+    ///----------without i------------
+
+    while(*p != '\0'){
+        if(*p != ' ' && (*p >= 'a' && *p <= 'z')){
+            *p = *p-'a'+'A';
+        }
+        p++;
+    }
+    printf("%s\n", str);
+
+    return 0;
 }
