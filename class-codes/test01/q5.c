@@ -51,7 +51,7 @@ void toOct(int n)
         return;
     }
 
-    while (n > 0)(x >> 7) {
+    while (n > 0) {
         oct[i] = n % 8;
         n = n / 8;                    
         i++;

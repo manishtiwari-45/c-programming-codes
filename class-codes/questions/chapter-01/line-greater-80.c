@@ -2,7 +2,7 @@
 #define MAXLINE 1000
 #define LIMIT 80
 
-int getline(car line[], int maxline);
+int getline(char line[], int maxline);
 int main()
 {
     int len;
